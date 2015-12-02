@@ -48,13 +48,10 @@ func main() {
 
     envMap, err := getenv()
 
-    rendered_template, err := tpl.Execute(envMap)
+    renderedTemplate, err := tpl.Execute(envMap)
     if err != nil {
         panic(err)
     }
-    fmt.Println(rendered_template)
-    if err != nil {
-        panic(err)
-    }
+    fmt.Println(renderedTemplate)
 }
 
